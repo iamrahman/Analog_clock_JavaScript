@@ -1,66 +1,84 @@
+body {
+  background-color: white;
+}
 .clock{
-    background-color: white;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-  }
-  .head-clock{
-    width: 10rem;
-  }
-  .twelve{
-    margin-left: 4.5rem;
-    position: absolute;
-  }
-  .nine{
-    margin-left: 0rem;
-    margin-top: 4.5rem;
-    position: absolute;
-  }
-  .three{
-    margin-left: 9.5rem;
-    margin-top: 4.5rem;
-    position: absolute;
-  }
-  .six{
-    margin-left: 4.5rem;
-    margin-top: 9em;
-    position: absolute;
-  }
-  .secound{
-    background-color: black;
-    width: 5rem;
-    height: 1.5px;
-    position: absolute;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    transform-origin: 0% 0%;
-  }
-  .minute{
-    background-color: black;
-    width: 3.5rem;
-    height: 3px;
-    position: absolute;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    transform: rotate(270deg);
-    transform-origin: 0% 0%;
-  }
-  .hour{
-    background-color: black;
-    width: 3rem;
-    height: 3px;
-    position: absolute;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    transform: rotate(0deg);
-    transform-origin: 0% 0%;
-  }
-  .middle-circle{
-    background-color: black;
-    width: 1rem;
-    height: 1rem;
-    margin-left: 4.5rem;
-    margin-top: 4.5rem;
-    position: absolute;
-    border-radius: 50%;
-  }
+  background-image: radial-gradient( red, black);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 2px 2px 51px grey;
+}
+.head-clock{
+  width: 10rem;
+  margin-left: 40vw;
+  margin-top: 40vh;
+}
+.twelve{
+  margin-left: 4.5rem;
+  position: absolute;
+  color: white;
+}
+.nine{
+  margin-left: 0rem;
+  margin-top: 4.5rem;
+  position: absolute;
+  color: white;
+}
+.three{
+  margin-left: 9.5rem;
+  margin-top: 4.5rem;
+  position: absolute;
+  color: white;
+}
+.six{
+  margin-left: 4.5rem;
+  margin-top: 9em;
+  position: absolute;
+  color: white;
+}
+.secound{
+  background-color: black;
+  width: 5rem;
+  height: 1.5px;
+  position: absolute;
+  color: white;
+  background-color: white;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  transform-origin: 0% 0%;
+}
+.minute{
+  background-color: black;
+  width: 3.5rem;
+  height: 3px;
+  position: absolute;
+  color: white;
+  background-color: white;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  transform: rotate(270deg);
+  transform-origin: 0% 0%;
+}
+.hour{
+  background-color: black;
+  width: 3rem;
+  height: 3px;
+  position: absolute;
+  color: white;
+  background-color: white;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+}
+.middle-circle{
+  background-color: black;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 4.5rem;
+  margin-top: 4.5rem;
+  position: absolute;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+}
