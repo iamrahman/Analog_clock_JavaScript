@@ -1,14 +1,11 @@
-var secoundDegree = 270;
-var minuteDegree = 270;
-var hourDegree = 0;
 startMinute = (minuteDegree) => {
-  var secound = document.getElementById('minute').style.transform = "rotate(" + minuteDegree + "deg)";
+  document.getElementById('minute').style.transform = "rotate(" + minuteDegree + "deg)";
 }
 startSecound = (secoundDegree) => {
-  var secound = document.getElementById('secound').style.transform = "rotate(" + secoundDegree + "deg)";
+  document.getElementById('secound').style.transform = "rotate(" + secoundDegree + "deg)";
 }
 startHour = (hourDegree) => {
-  var secound = document.getElementById('hour').style.transform = "rotate(" + hourDegree + "deg)";
+  document.getElementById('hour').style.transform = "rotate(" + hourDegree + "deg)";
 }
 
 startClock = () =>{
@@ -25,4 +22,17 @@ startClock = () =>{
     startHour(hourDegree);
   }, 3600000);
 }
+//Iniliza the Date and calulate each hands degree
+var time = new Date();
+var secound = time.getSeconds();
+var minute = time.getMinutes();
+var hour = time.getHours();
+var secoundDegree = 270 + Number(secound*6);
+var minuteDegree = 270 + Number(minute*6);
+var hourDegree = 270 + Number((hour%12)*30);
+//Inilize with the currebt initial value
+document.getElementById('minute').style.transform = "rotate(" + minuteDegree + "deg)";
+document.getElementById('secound').style.transform = "rotate(" + secoundDegree + "deg)";
+document.getElementById('hour').style.transform = "rotate(" + hourDegree + "deg)";
+//Start the Clock
 startClock();
