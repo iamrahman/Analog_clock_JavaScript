@@ -15,6 +15,7 @@ startClock = () =>{
     minuteDegree = Number(minuteDegree) + Number(6);
     hourDegree = parseFloat(hourDegree) + parseFloat(Number(0.5).toFixed(1));
     startMinute(minuteDegree);
+    startHour(hourDegree);
     console.log(secoundDegree + ":" + minuteDegree + ":" + hourDegree);
   }
   startSecound(secoundDegree);
@@ -27,7 +28,7 @@ var minute = time.getMinutes();
 var hour = time.getHours();
 var secoundDegree = 270 + Number(secound*6);
 var minuteDegree = 270 + Number(minute*6);
-let subHour = (minuteDegree % 60)/2;
+let subHour = (minute % 60)/2;
 var hourDegree = 270 + Number((hour%12)*30) + subHour;
 //Inilize with the currebt initial value
 window.onload = function() {
