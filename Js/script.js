@@ -7,6 +7,9 @@ startSecound = (secoundDegree) => {
 startHour = (hourDegree) => {
   document.getElementById('hour').style.transform = "rotate(" + hourDegree + "deg)";
 }
+startPendulam = (pendAngle) => {
+  document.getElementById('pendilum').style.transform = "rotate(" + pendAngle + "deg)";
+}
 
 startClock = () =>{
   setInterval( function() {
@@ -17,6 +20,13 @@ startClock = () =>{
     startMinute(minuteDegree);
     startHour(hourDegree);
     console.log(secoundDegree + ":" + minuteDegree + ":" + hourDegree);
+  }
+  if(pendAngle == 30){
+    startPendulam(pendAngle);
+    pendAngle = -30;
+  }else if(pendAngle == -30){
+    startPendulam(pendAngle);
+    pendAngle = 30;
   }
   startSecound(secoundDegree);
   }, 1000);
@@ -30,6 +40,7 @@ var secoundDegree = 270 + Number(secound*6);
 var minuteDegree = 270 + Number(minute*6);
 let subHour = (minute % 60)/2;
 var hourDegree = 270 + Number((hour%12)*30) + subHour;
+var pendAngle = 30;
 //Inilize with the currebt initial value
 window.onload = function() {
   console.log(secoundDegree + ":" + minuteDegree + ":" + hourDegree + ":" + subHour);

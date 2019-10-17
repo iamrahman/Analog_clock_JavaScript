@@ -10,9 +10,13 @@ body {
   border: 2px solid white;
 }
 .head-clock{
-  width: 10rem;
+  width: 10.3rem;
+  height: 18rem;
   margin-left: 40vw;
-  margin-top: 40vh;
+  margin-top: 20vh;
+  background-image: radial-gradient(black,grey, black);
+  border-radius: 5%;
+  padding-top: 1rem;
 }
 .twelve{
   margin-left: 4.5rem;
@@ -49,7 +53,7 @@ body {
   transform: rotate(270deg);
 }
 .minute{
-  width: 3.5rem;
+  width: 4rem;
   height: 3px;
   position: absolute;
   color: white;
@@ -80,4 +84,29 @@ body {
   color: white;
   background-color: white;
   border-radius: 50%;
+}
+.pend_niddle{
+    width: 0.3rem;
+    height: 6rem;
+    background-color: white;
+    border-radius: 17%;
+    transform-origin: 0% 0%;
+    position: absolute;
+}
+.pend {
+  margin-left: 5rem;
+  position: absolute;
+}
+.pend_circle{
+    width: 1rem;
+    height: 1rem;
+    background-image: radial-gradient( red, black);
+    border-radius: 50%;
+    transform-origin: 0% 0%;
+    margin-top: 5.7rem;
+    position: absolute;
+    margin-left: -0.35rem;
+}
+.pendilum { 
+  transition-duration: 1s;
 }
