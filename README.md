@@ -7,4 +7,4 @@ This is build using JavaScript, CSS, HTML.
 https://iamrahman.github.io/Analog_clock_JavaScript/index.html
 
 
-![header image](https://github.com/iamrahman/Analog_clock_JavaScript/blob/master/Img/001.jpg)
+![header image](https://github.com/iamrahman/Analog_clock_JavaScript/blob/master/Img/000001.png)
